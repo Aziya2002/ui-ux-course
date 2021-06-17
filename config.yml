@@ -1,0 +1,16 @@
+title: UI ux
+description: This is for UI UX design
+template:
+  repo: ui-ux-template
+  name: ui-ux
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
